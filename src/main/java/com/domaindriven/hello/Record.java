@@ -14,17 +14,46 @@ public class Record implements Serializable {
     private String summary;
     private String category;
 
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public void setRevenueOrExpense(String revenueOrExpense) {
+        this.revenueOrExpense = revenueOrExpense;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
+    }
+
+    public void setBalance(String balance) {
+        this.balance = balance;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
     public Record(String date, boolean isRevenue, String amount, String balance, String summary, String category) {
         this.date = date;
         if(isRevenue){
             revenueOrExpense = "수입";
         }else {
+
             revenueOrExpense = "지출";
         }
         this.amount = amount;
         this.balance = balance;
         this.summary = summary;
         this.category = category;
+    }
+
+    public Record() {
+
     }
 
 

@@ -26,4 +26,5 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-freemarker')      // FreeMarker for View Tech.
+    compile('org.springframework.boot:spring-boot-starter-thymeleaf')      // FreeMarker for View Tech.
 }

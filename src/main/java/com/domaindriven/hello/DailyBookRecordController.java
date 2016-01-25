@@ -1,7 +1,7 @@
 package com.domaindriven.hello;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +14,7 @@ import java.util.List;
 public class DailyBookRecordController {
 
     private static FakeRecords fakeRecords = new FakeRecords();
+
 
     @RequestMapping("dailybook/list")
     public List<Record> list(){
