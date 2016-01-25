@@ -6,5 +6,5 @@
 
 ### 아키텍처 노트
 * Controller는 다음 두 가지로 구분
-    * 데이터를 CRUD 하는 RestController
-    * 여러 데이터를 보여주기 위한 페이지 Controller 
+    * 일단 @Controller로 만든다
+    * Ajax 형태 처리가 필요할 때 RestController 검토하기로
