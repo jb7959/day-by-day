@@ -1,12 +1,23 @@
 package com.domaindriven.hello;
 
-import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 
 /**
  * Created by tony on 2016. 1. 22..
+ * Changed by jerry on 2016.1. 26.. 엔티티로 수정
  */
-public class Record implements Serializable {
 
+@Entity
+public class Record {
+
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long key;
     private String date;
     private String revenueOrExpense;
     private String amount;
@@ -56,6 +67,7 @@ public class Record implements Serializable {
 
     }
 
+    public long getKey() {return key;}
 
     public String getDate() {
         return date;

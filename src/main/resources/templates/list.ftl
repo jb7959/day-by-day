@@ -9,6 +9,9 @@
     </tr>
     <#list list as record>
     <tr>
+
+        <td><a href=./list/${record.key}>${record.key}</a></td>
+
         <td>${record.date}</td>
         <#if record.revenueOrExpense == "수입">
             <td>${record.amount}</td>
